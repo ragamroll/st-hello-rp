@@ -21,4 +21,5 @@ if 'user' not in st.session_state:
         st.session_state['user'] = username
         st.session_state['pass'] = password
 else:
+        st.write("session state user")
         st.write(st.session_state['user'])
