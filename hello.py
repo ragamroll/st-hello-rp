@@ -14,7 +14,7 @@ st.header('_Streamlit_ is :blue[cool] :sunglasses:')
 st.write("Hello RP")
 
 if 'user' not in st.session_state:
-        with st.form(key="my_form"):
+        with st.form("my_form"):
                 username = st.text_input("Username")
                 password = st.text_input("Password")
                 st.form_submit_button("Login")
