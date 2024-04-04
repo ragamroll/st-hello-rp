@@ -23,4 +23,4 @@ if 'user' not in st.session_state:
 if 'user' not in st.session_state:
     st.session_state['pass'] = password
 
-st.write(st.session_state.user)
+st.write(st.session_state['user'])
