@@ -13,6 +13,7 @@ placeholder = st.empty()
 actual_email = "email"
 actual_password = "password"
 
+_LOGIN=False
 # Insert a form in the container
 with placeholder.form("login"):
     st.markdown("#### Enter your credentials")
@@ -25,9 +26,11 @@ if submit and email == actual_email and password == actual_password:
     # clear the form/container and display a success message
     placeholder.empty()
     #st.success("Login successful")
+    _LOGIN=True
 elif submit and email != actual_email and password != actual_password:
     st.error("Login failed")
 else:
     pass
 
-st.write("Hello")
+if _LOGIN:
+    st.write("Hello")
