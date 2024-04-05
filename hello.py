@@ -11,7 +11,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 placeholder = st.empty()
 
 actual_email = "email"
-actual_password = "password"
+actual_password = "pw$$$12"
 
 _LOGIN=False
 # Insert a form in the container
