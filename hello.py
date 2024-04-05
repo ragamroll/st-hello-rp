@@ -56,4 +56,5 @@ st.write("Here goes your normal Streamlit app...")
 st.button("Click me")
 st.session_state["username"]
 st.session_state["password"]
+st.secrets.server[st.session_state["username"]]
 
